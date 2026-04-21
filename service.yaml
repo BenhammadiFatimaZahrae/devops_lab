@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp-service
+spec:
+  type: LoadBalancer        # ← بدّل NodePort بـ LoadBalancer
+  selector:
+    app: webapp
+  ports:
+    - port: 32293
+      targetPort: 5000
+      nodePort: 32293       # ← حدد نفس الـ port
