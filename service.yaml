@@ -9,4 +9,4 @@ spec:
   ports:
     - port: 32293
       targetPort: 5000
-      nodePort: 32293       # ← حدد نفس الـ port
+      nodePort: 32293      
